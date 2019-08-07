@@ -9,4 +9,8 @@ import App from './App';
 
 // set up store
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Provider >
+    <App />
+  </Provider>, 
+  document.getElementById('root'));
