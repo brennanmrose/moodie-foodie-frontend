@@ -4,10 +4,6 @@ import { fetchMoods } from './actions/fetchMoods';
 
 class App extends React.Component {
 
-  componentDidMount() {
-    
-  }
-
   render() {
     return (
       <div className="App">
@@ -17,11 +13,4 @@ class App extends React.Component {
   }
 }
 
-// const mapStateToProps = (state) => {
-//   return {
-//     moods: state.moods
-//   }
-// }
-
 export default connect()(App);
-// this connect is automatically calling dispatch on the return value of fetchMoods
