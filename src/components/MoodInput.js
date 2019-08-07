@@ -10,13 +10,17 @@ class MoodInput extends React.Component {
     });
   }
 
+  handleOnSubmit = (event) => {
+
+  }
+
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.handleOnSubmit}>
           <label>Create a New Mood: </label>
           <input type='text'placeholder='Name' value={this.state.name} name="name" onChange={this.handleOnChange}/><br></br>
-          <input type="submit" />
+          <input type="submit"/>
         </form>
       </div>
     )
