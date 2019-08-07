@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 class MoodInput extends React.Component {
 
@@ -27,4 +28,4 @@ class MoodInput extends React.Component {
   }
 }
 
-export default MoodInput;
+export default connect()(MoodInput);
