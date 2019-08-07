@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 import Moods from '../components/Moods';
 import MoodInput from '../components/MoodInput';
 
@@ -15,4 +17,4 @@ class MoodsContainer extends React.Component {
   }
 }
 
-export default MoodsContainer
+export default connect()(MoodsContainer);
