@@ -16,7 +16,7 @@ class MoodsContainer extends React.Component {
     return(
       <div>
         <MoodInput />
-        <Moods />
+        <Moods moods={this.props.moods}/>
       </div>
     )
   }
