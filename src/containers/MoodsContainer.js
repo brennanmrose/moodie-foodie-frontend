@@ -17,4 +17,10 @@ class MoodsContainer extends React.Component {
   }
 }
 
-export default connect()(MoodsContainer);
+const mapStateToProps = (state) => {
+  return {
+    moods: state.moods
+  }
+}
+
+export default connect(mapStateToProps)(MoodsContainer);
