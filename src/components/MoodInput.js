@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { addMood } from '../actions/addMood'
 
 class MoodInput extends React.Component {
 
@@ -12,7 +13,8 @@ class MoodInput extends React.Component {
   }
 
   handleOnSubmit = (event) => {
-
+    event.preventDefault()
+    this.props.addMood(this.state)
   }
 
   render() {
@@ -28,4 +30,4 @@ class MoodInput extends React.Component {
   }
 }
 
-export default connect()(MoodInput);
+export default connect(null, { addMood })(MoodInput);
