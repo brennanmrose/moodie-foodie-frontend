@@ -9,6 +9,8 @@ export const addMood = (data) => {
       method: 'POST',
       body: JSON.stringify(data)
     })
+      .then(response => response.json())
+      .then(mood => dispatch({ type: 'ADD_MOOD', payload: mood }))
   }
 
 }
