@@ -18,8 +18,8 @@ class MoodsContainer extends React.Component {
     return(
       <div>
         <Route path='/moods/new' component={MoodInput} />
-        <Route path='/moods/:id' render={ () => <Mood moods={this.props.moods} /> } />
-        <Route exact path='/moods' render={ () => <Moods moods={this.props.moods} /> } />
+        <Route path='/moods/:id' render={ (routerProps) => <Mood moods={this.props.moods} /> } />
+        <Route exact path='/moods' render={ (routerProps) => <Moods moods={this.props.moods} /> } />
       </div>
     )
   }
