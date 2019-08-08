@@ -15,6 +15,9 @@ class MoodInput extends React.Component {
   handleOnSubmit = (event) => {
     event.preventDefault()
     this.props.addMood(this.state)
+    this.setState({
+      name: ''
+    })
   }
 
   render() {
