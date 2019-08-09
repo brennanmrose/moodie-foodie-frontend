@@ -6,6 +6,7 @@ import { fetchMoods } from '../actions/fetchMoods';
 import Mood from '../components/Mood';
 import Moods from '../components/Moods';
 import Foods from '../components/Foods';
+import Drinks from '../components/Drinks'
 import MoodInput from '../components/MoodInput';
 
 
@@ -21,6 +22,7 @@ class MoodsContainer extends React.Component {
         <Route path='/moods/new' component={MoodInput} />
         <Route path='/moods/:id' render={ (routerProps) => <Mood {...routerProps} moods={this.props.moods} /> } />
         <Route path='/moods/:id/foods' render={ (routerProps) => <Foods {...routerProps} moods={this.props.moods} /> } />
+        <Route path='/moods/:id/drinks' render={ (routerProps) => <Drinks {...routerProps} moods={this.props.moods} /> } />
         <Route exact path='/moods' render={ (routerProps) => <Moods {...routerProps} moods={this.props.moods} /> } />
       </div>
     )
