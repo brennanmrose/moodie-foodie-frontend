@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Mood = (props) => {
 
-
- // if props.match exists
  let mood = props.match ? props.moods[props.match.params.id - 1] : props.mood
-  // let mood = props.moods[props.match.params.id - 1]
 
   return (
     mood ?
@@ -21,7 +18,7 @@ const Mood = (props) => {
       <br></br>
       <Link to={`/moods/${mood.id}/desserts`}>Desserts </Link>
     </div> :
-    <p>There were no moods found with this id</p>
+    null
   )
 
 }
