@@ -16,7 +16,7 @@ const Drinks = (props) => {
         ))}
       </ul>
     </div>
-    : <p>There were no moods found with this id</p>
+    : null
   )
 
 }
