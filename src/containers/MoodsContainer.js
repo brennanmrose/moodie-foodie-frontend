@@ -9,6 +9,7 @@ import Foods from '../components/Foods';
 import Drinks from '../components/Drinks'
 import Desserts from '../components/Desserts'
 import MoodInput from '../components/MoodInput';
+import Home from '../components/Home'
 
 
 class MoodsContainer extends React.Component {
@@ -20,9 +21,10 @@ class MoodsContainer extends React.Component {
   render() {
     return(
       <div>
+        <Route exact path='/home' component={ Home } />
         <Route exact path='/moods' render={ (routerProps) => <Moods {...routerProps} moods={this.props.moods} /> } />
         <Route path='/moods/new' component={MoodInput} />
-        <Route path='/moods/:id' render={ (routerProps) => <Mood {...routerProps} moods={this.props.moods} /> } />
+        <Route exact path='/moods/:id' render={ (routerProps) => <Mood {...routerProps} moods={this.props.moods} /> } />
         <Route path='/moods/:id/foods' render={ (routerProps) => <Foods {...routerProps} moods={this.props.moods} /> } />
         <Route path='/moods/:id/drinks' render={ (routerProps) => <Drinks {...routerProps} moods={this.props.moods} /> } />
         <Route path='/moods/:id/desserts' render={ (routerProps) => <Desserts {...routerProps} moods={this.props.moods} /> } />

@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Mood = (props) => {
 
-  let mood = props.moods[props.match.params.id - 1]
+
+ // if props.match exists
+ let mood = props.match ? props.moods[props.match.params.id - 1] : props.mood
+  // let mood = props.moods[props.match.params.id - 1]
 
   return (
     mood ?
