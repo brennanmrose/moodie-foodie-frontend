@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Food = (props) => {
+const Foods = (props) => {
 
   let mood = props.moods[props.match.params.id - 1]
 
@@ -21,4 +21,4 @@ const Food = (props) => {
 
 }
 
-export default Food;
+export default Foods;
