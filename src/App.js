@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import { fetchMoods } from './actions/fetchMoods';
 
 import MoodsContainer from './containers/MoodsContainer';
+import VictualsContainer from './containers/VictualsContainer';
 import Home from './components/Home';
 import NavBar from './components/NavBar'
 
@@ -19,6 +20,7 @@ class App extends React.Component {
         <NavBar />
         <Route exact path='/home' component={ Home } />
         <MoodsContainer />
+        <VictualsContainer />
       </div>
     );
   }
