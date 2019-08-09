@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Mood = (props) => {
 
@@ -9,9 +10,13 @@ const Mood = (props) => {
     <div>
       <h1>{mood.name}</h1>
       <h3>Please select from the following:</h3>
-      <p>1. Foods</p>
-      <p>2. Drinks</p>
-      <p>3. Desserts</p>
+      <Link to={`/moods/${mood.id}/foods`}>Foods </Link>
+      <br></br>
+      <br></br>
+      <Link to={`/moods/${mood.id}/drinks`}>Drinks </Link>
+      <br></br>
+      <br></br>
+      <Link to={`/moods/${mood.id}/desserts`}>Desserts </Link>
     </div> :
     <p>There were no moods found with this id</p>
   )
