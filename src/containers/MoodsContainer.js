@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
 
-import { fetchMoods } from '../actions/fetchMoods';
 import Mood from '../components/Mood';
 import Moods from '../components/Moods';
 import Foods from '../components/Foods';
@@ -13,10 +12,6 @@ import Home from '../components/Home'
 
 
 class MoodsContainer extends React.Component {
-
-  componentDidMount() {
-    this.props.fetchMoods();
-  }
 
   render() {
     return(
@@ -38,4 +33,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, { fetchMoods })(MoodsContainer);
+export default connect(mapStateToProps)(MoodsContainer);

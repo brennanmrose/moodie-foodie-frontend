@@ -1,12 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
+import { fetchMoods } from './actions/fetchMoods';
 
 import MoodsContainer from './containers/MoodsContainer';
 import Home from './components/Home';
 import NavBar from './components/NavBar'
 
 class App extends React.Component {
+
+  componentDidMount() {
+    this.props.fetchMoods();
+  }
 
   render() {
     return (
@@ -19,4 +24,10 @@ class App extends React.Component {
   }
 }
 
-export default connect()(App);
+const mapStateToProps = (state) => {
+  return {
+    moods: state.moods
+  }
+}
+
+export default connect(mapStateToProps, { fetchMoods })(App);
