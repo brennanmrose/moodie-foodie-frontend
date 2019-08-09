@@ -5,8 +5,7 @@ import { Route } from 'react-router-dom';
 import Mood from '../components/Mood';
 import Moods from '../components/Moods';
 import MoodInput from '../components/MoodInput';
-import Home from '../components/Home'
-
+import Home from '../components/Home';
 
 class MoodsContainer extends React.Component {
 
