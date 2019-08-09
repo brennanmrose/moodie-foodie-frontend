@@ -21,7 +21,6 @@ class MoodsContainer extends React.Component {
   render() {
     return(
       <div>
-        <Route exact path='/home' component={ Home } />
         <Route exact path='/moods' render={ (routerProps) => <Moods {...routerProps} moods={this.props.moods} /> } />
         <Route path='/moods/new' component={MoodInput} />
         <Route exact path='/moods/:id' render={ (routerProps) => <Mood {...routerProps} moods={this.props.moods} /> } />
