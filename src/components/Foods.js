@@ -17,7 +17,7 @@ const Foods = (props) => {
             <br></br>
             <a href={food.recipe_url} target="_blank">Link to Recipe</a>
             <br></br>
-            <img src={food.image_url} alt="Recipe" height="600" width="600"/>
+            <img src={food.image_url} alt="Recipe" />
           </li>
         ))}
       </ul>
