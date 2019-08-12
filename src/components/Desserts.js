@@ -7,7 +7,7 @@ const Desserts = (props) => {
   return (
     mood ?
     <div>
-      <h1>Desserts</h1>
+      <h1>{mood.name} Desserts</h1>
       <ul>
         {mood.desserts.map((dessert, index) => (
           <li>
