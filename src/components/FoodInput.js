@@ -34,7 +34,7 @@ class FoodInput extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleOnSubmit}>
-          <label>Create a New Food: </label>
+          <label>Create a New Food for this Mood: </label>
           <input
             type='text'
             placeholder='Name'
