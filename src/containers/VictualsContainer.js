@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
 
 import Foods from '../components/Foods';
+import FoodInput from '../components/FoodInput';
 import Drinks from '../components/Drinks'
 import Desserts from '../components/Desserts'
 
