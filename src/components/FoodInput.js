@@ -50,4 +50,4 @@ class FoodInput extends React.Component {
   }
 }
 
-export default connect(null, { addMood })(FoodInput);
+export default connect(null, { addFood })(FoodInput);
