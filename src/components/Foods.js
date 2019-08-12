@@ -13,9 +13,7 @@ const Foods = (props) => {
         {mood.foods.map((food, index) => (
           <li>
             <h4>{food.name}</h4>
-            {food.description}
-            <br></br>
-            <br></br>
+            <p>{food.description}</p>
             <a href={food.recipe_url} target="_blank">Link to Recipe</a>
             <br></br>
             <div class="holder">

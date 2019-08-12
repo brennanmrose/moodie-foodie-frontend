@@ -12,9 +12,7 @@ const Drinks = (props) => {
         {mood.drinks.map((drink, index) => (
           <li>
             <h4>{drink.name}</h4>
-            {drink.description}
-            <br></br>
-            <br></br>
+            <p>{drink.description}</p>
             { drink.drink_url
               ? <a href={drink.drink_url} target="_blank">Learn More...</a>
               : null
