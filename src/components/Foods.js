@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Foods.css';
 
 const Foods = (props) => {
 
@@ -17,7 +18,9 @@ const Foods = (props) => {
             <br></br>
             <a href={food.recipe_url} target="_blank">Link to Recipe</a>
             <br></br>
-            <img src={food.image_url} alt="Recipe" />
+            <div class="holder">
+              <img src={food.image_url} alt="Recipe" />
+            </div>
           </li>
         ))}
       </ul>
