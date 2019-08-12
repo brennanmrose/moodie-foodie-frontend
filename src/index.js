@@ -4,7 +4,8 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-import moodReducer from './reducers/moodReducer'
+import moodReducer from './reducers/moodReducer';
+import foodReducer from './reducers/foodReducer';
 
 import App from './App';
 
