@@ -18,7 +18,9 @@ const Drinks = (props) => {
               : null
             }
             <br></br>
-            <img src={drink.image_url} alt="Recipe" />
+            <div class="holder">
+              <img src={drink.image_url} alt="Recipe" />
+            </div>
           </li>
         ))}
       </ul>
