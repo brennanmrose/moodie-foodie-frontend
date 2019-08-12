@@ -9,7 +9,6 @@ class FoodInput extends React.Component {
     description: '',
     recipe_url: '',
     image_url: '',
-    mood_id: ''
   }
 
   handleOnChange = (event) => {
@@ -20,13 +19,12 @@ class FoodInput extends React.Component {
 
   handleOnSubmit = (event) => {
     event.preventDefault()
-    this.props.addFood(this.state)
+    this.props.addFood(this.state, this.props.moodProps.id)
     this.setState({
       name: '',
       description: '',
       recipe_url: '',
       image_url: '',
-      mood_id: ''
     })
   }
 
@@ -34,12 +32,34 @@ class FoodInput extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleOnSubmit}>
-          <label>Create a New Food for this Mood: </label>
+          <label>Create a New Food for {this.props.moodProps.name}: </label>
+          <br></br>
           <input
             type='text'
             placeholder='Name'
-            value={this.state.name}
             name="name"
+            value={this.state.name}
+            onChange={this.handleOnChange}
+          />
+          <input
+            type='text'
+            placeholder='Description'
+            name="description"
+            value={this.state.description}
+            onChange={this.handleOnChange}
+          />
+          <input
+            type='text'
+            placeholder='recipe_url'
+            name="recipe_url"
+            value={this.state.recipe_url}
+            onChange={this.handleOnChange}
+          />
+          <input
+            type='text'
+            placeholder='image_url'
+            name="image_url"
+            value={this.state.image_url}
             onChange={this.handleOnChange}
           />
           <br></br>

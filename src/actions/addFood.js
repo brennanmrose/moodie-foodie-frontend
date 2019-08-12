@@ -1,7 +1,7 @@
-export const addFood = (data) => {
+export const addFood = (data, moodId) => {
 
     return (dispatch) => {
-      fetch('http://localhost:3000/api/v1/moods/:id', {
+      fetch(`http://localhost:3000/api/v1/moods/${moodId}/foods`, {
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
