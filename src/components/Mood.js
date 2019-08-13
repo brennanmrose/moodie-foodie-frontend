@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Mood.css';
 import { Link } from 'react-router-dom';
 
 const Mood = (props) => {
