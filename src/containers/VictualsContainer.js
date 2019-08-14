@@ -7,6 +7,7 @@ import FoodInput from '../components/FoodInput';
 import Drinks from '../components/Drinks';
 import DrinkInput from '../components/DrinkInput';
 import Desserts from '../components/Desserts';
+import DessertInput from '../components/DessertInput';
 
 class VictualsContainer extends React.Component {
 
@@ -18,6 +19,7 @@ class VictualsContainer extends React.Component {
         <Route path='/moods/:id/drinks' render={ (routerProps) => <Drinks {...routerProps} moods={this.props.moods} /> } />
         <Route path='/moods/:id/drinks/new' component={DrinkInput} />
         <Route path='/moods/:id/desserts' render={ (routerProps) => <Desserts {...routerProps} moods={this.props.moods} /> } />
+        <Route path='/moods/:id/desserts/new' component={DessertInput} />
       </div>
     )
   }
