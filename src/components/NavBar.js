@@ -5,7 +5,7 @@ import { Nav, NavItem, Dropdown, NavDropdown } from 'react-bootstrap';
 const NavBar = () => {
   return (
     <div className="NavBar">
-      <Nav variant="tabs" activeKey="1">
+      <Nav variant="tabs" defaultActiveKey="/home">
       <Nav.Item>
         <Nav.Link eventKey="1" href="#/home">
           <NavLink activeClassName="active" to='/home' >Home</NavLink>
