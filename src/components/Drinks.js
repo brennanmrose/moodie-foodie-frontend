@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Drinks.css';
+import DrinkInput from './DrinkInput';
 
 const Drinks = (props) => {
 
@@ -25,6 +26,7 @@ const Drinks = (props) => {
           </li>
         ))}
       </ul>
+      <DrinkInput moodProps={mood}/>
     </div>
     : null
   )
