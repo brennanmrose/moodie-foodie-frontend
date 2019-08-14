@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Desserts.css';
+import DessertInput from './DessertInput';
 
 const Desserts = (props) => {
 
@@ -22,6 +23,7 @@ const Desserts = (props) => {
           </li>
         ))}
       </ul>
+      <DessertInput moodProps={mood}/>
     </div>
     : null
   )
