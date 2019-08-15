@@ -1,0 +1,14 @@
+.new-mood {
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+}
+
+.new-mood-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}

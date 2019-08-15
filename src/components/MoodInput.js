@@ -1,4 +1,5 @@
 import React from 'react';
+import '../MoodInput.css';
 import { connect } from 'react-redux';
 import { addMood } from '../actions/addMood'
 
@@ -27,9 +28,10 @@ class MoodInput extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleOnSubmit}>
-          <label>Create a New Mood: </label>
+        <form onSubmit={this.handleOnSubmit} class="form">
+          <h1 class="new-mood">Create a New Mood: </h1>
           <br></br>
+          <label>Name: </label>
           <input
             type='text'
             placeholder='Name'
@@ -38,6 +40,7 @@ class MoodInput extends React.Component {
             onChange={this.handleOnChange}
           />
           <br></br>
+          <label>Image Url: </label>
           <input
             type='text'
             placeholder='image_url'
@@ -46,8 +49,10 @@ class MoodInput extends React.Component {
             onChange={this.handleOnChange}
           />
           <br></br>
+          <br></br>
           <input type="submit"/>
         </form>
+        <img src="https://i.pinimg.com/originals/ee/0d/13/ee0d13a31e39f58fe87cc331b8fb638a.gif" alt="Refrigerator" class="new-mood-img"/>
       </div>
     )
   }
