@@ -3,3 +3,12 @@
     height: 100%;
     width: 100%;
 }
+
+#text {
+  text-align: left;
+
+}
+
+#text span {
+  background-color: white;
+}
