@@ -9,7 +9,7 @@ const Foods = (props) => {
   return (
     mood ?
     <div>
-      <h1>{mood.name} Foods</h1>
+      <h1 class="foods">{mood.name} Foods</h1>
       <ul>
         {mood.foods.map((food, index) => (
           <li>
