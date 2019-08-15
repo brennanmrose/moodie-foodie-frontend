@@ -5,6 +5,10 @@
   width: 25%;
 }
 
+#moods-title {
+  text-align: center;
+}
+
 #moods {
   text-align: center;
 }
