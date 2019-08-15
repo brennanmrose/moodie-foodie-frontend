@@ -2,6 +2,7 @@ import React from 'react';
 import Mood from './Mood';
 import { Link } from 'react-router-dom';
 import { Dropdown, DropdownButton } from 'react-bootstrap'
+import '../Moods.css';
 
 const Moods = (props) => {
 
