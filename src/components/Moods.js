@@ -1,18 +1,18 @@
 import React from 'react';
 import Mood from './Mood';
 import { Link } from 'react-router-dom';
-import { Dropdown, DropdownButton} from 'react-bootstrap'
+import { Dropdown, DropdownButton } from 'react-bootstrap'
 
 const Moods = (props) => {
 
   return (
     <div>
-       <Dropdown>
+       <Dropdown >
        <Dropdown.Toggle variant="success" id="dropdown-basic">
          Moods
        </Dropdown.Toggle>
 
-       <Dropdown.Menu>
+       <Dropdown.Menu >
          {props.moods.map(mood => {
            return <Dropdown.Item tag={ Link } tag={ Link } to={`/moods/${mood.id}`}>{mood.name}</Dropdown.Item>
          })}
