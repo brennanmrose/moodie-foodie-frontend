@@ -17,16 +17,27 @@ const Mood = (props) => {
     <div class="container-full-bg">
       <div class="jumbotron">
         <div class="container">
-          <Jumbotron  fluid style={ divStyle }>
+          <Jumbotron  style={ divStyle }>
             <h1>{mood.name}</h1>
             <h3>Please select from the following:</h3>
-            <Link to={`/moods/${mood.id}/foods`}>Foods </Link>
+            <br></br>
+            <h4>1. <Link to={`/moods/${mood.id}/foods`}>Foods </Link></h4>
             <br></br>
             <br></br>
-            <Link to={`/moods/${mood.id}/drinks`}>Drinks </Link>
+            <h4>2. <Link to={`/moods/${mood.id}/drinks`}>Drinks </Link></h4>
             <br></br>
             <br></br>
-            <Link to={`/moods/${mood.id}/desserts`}>Desserts </Link>
+            <h4>3. <Link to={`/moods/${mood.id}/desserts`}>Desserts </Link></h4>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
           </Jumbotron>
         </div>
       </div>
