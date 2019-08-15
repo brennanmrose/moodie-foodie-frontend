@@ -1,3 +1,5 @@
-body {
-  background-image: `url(${mood.image_url})`
+.jumbotron{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
