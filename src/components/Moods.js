@@ -8,6 +8,8 @@ const Moods = (props) => {
 
   return (
     <div>
+      <h1>How are you feeling today?</h1>
+      <p id="moods">Select a mood from the dropdown below:</p>
        <Dropdown >
        <Dropdown.Toggle variant="success" id="dropdown-basic">
          Moods
