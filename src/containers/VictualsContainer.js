@@ -25,7 +25,7 @@ class VictualsContainer extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    moods: state.mood.moods
+    moods: state.moods
   }
 }
 
