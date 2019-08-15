@@ -14,7 +14,7 @@ const Moods = (props) => {
 
        <Dropdown.Menu >
          {props.moods.map(mood => {
-           return <Dropdown.Item tag={ Link } tag={ Link } to={`/moods/${mood.id}`}>{mood.name}</Dropdown.Item>
+           return <Dropdown.Item ><Link to={`/moods/${mood.id}`}>{mood.name}</Link></Dropdown.Item>
          })}
        </Dropdown.Menu>
      </Dropdown>
