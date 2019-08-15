@@ -18,7 +18,3 @@ const Home = () => (
 );
 
 export default Home;
-
-
-
-// <img src="https://d2ebzu6go672f3.cloudfront.net/media/content/images/p3_MedDiet_W1806_gi667751254.jpg" alt="Recipe" />
