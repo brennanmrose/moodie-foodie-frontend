@@ -24,14 +24,3 @@ const Moods = (props) => {
 }
 
 export default Moods;
-
-
-
-
-
-
-
-
-
-
-// {props.moods.map(mood => <li key={mood.id}><Link to={`/moods/${mood.id}`}>{mood.name}</Link></li>)}
