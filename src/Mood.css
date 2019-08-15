@@ -4,9 +4,16 @@
     width: 100%;
 }
 
+h1 {
+  text-align: center;
+}
+
+#title span {
+  background-color: white;
+}
+
 #text {
   text-align: left;
-
 }
 
 #text span {

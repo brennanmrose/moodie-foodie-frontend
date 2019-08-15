@@ -18,7 +18,7 @@ const Mood = (props) => {
       <div class="jumbotron">
         <div class="container">
           <Jumbotron  style={ divStyle }>
-            <h1 id="text"><span>{mood.name}</span></h1>
+            <h1 id="title"><span>{mood.name}</span></h1>
             <h3 id="text"><span>Please select from the following:</span></h3>
             <br></br>
             <h4 id="text"><span>1. <Link to={`/moods/${mood.id}/foods`}>Foods </Link></span></h4>
