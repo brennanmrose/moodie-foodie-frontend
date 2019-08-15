@@ -6,22 +6,22 @@ const NavBar = () => {
   return (
     <div className="NavBar">
       <Nav variant="tabs" defaultActiveKey="/home">
-      <Nav.Item>
-        <Nav.Link eventKey="1" href="#/home">
-          <NavLink activeClassName="active" to='/home' >Home</NavLink>
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="2" title="Item">
-          <NavLink activeClassName="active" to='/moods' >Moods</NavLink>
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="3" title="Item">
-          <NavLink activeClassName="active" to='/moods/new' >New Mood</NavLink>
-        </Nav.Link>
-      </Nav.Item>
-    </Nav>
+        <Nav.Item>
+          <Nav.Link eventKey="1" href="#/home">
+            <NavLink activeClassName="active" to='/home' >Home</NavLink>
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="2" title="Item">
+            <NavLink activeClassName="active" to='/moods' >Moods</NavLink>
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="3" title="Item">
+            <NavLink activeClassName="active" to='/moods/new' >New Mood</NavLink>
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
     </div>
   )
 }
