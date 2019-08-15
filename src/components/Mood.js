@@ -6,15 +6,14 @@ import { Jumbotron } from 'react-bootstrap';
 const Mood = (props) => {
 
  let mood = props.match ? props.moods[props.match.params.id - 1] : props.mood
- let divStyle = {
-   color: 'blue',
-   backgroundImage: `${mood.image_url}`,
- };
+ // let divStyle = {
+ //   color: 'blue',
+ //   backgroundImage: `${mood.image_url}`,
+ // };
 
   return (
     mood ?
     <div>
-      <Jumbotron fluid style={ divStyle }>
         <h1>{mood.name}</h1>
         <h3>Please select from the following:</h3>
         <Link to={`/moods/${mood.id}/foods`}>Foods </Link>
@@ -24,7 +23,6 @@ const Mood = (props) => {
         <br></br>
         <br></br>
         <Link to={`/moods/${mood.id}/desserts`}>Desserts </Link>
-      </Jumbotron>
     </div> :
     null
   )
@@ -32,3 +30,11 @@ const Mood = (props) => {
 }
 
 export default Mood;
+
+
+
+
+
+
+// <Jumbotron fluid style={ divStyle }>
+// </Jumbotron>
