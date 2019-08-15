@@ -4,7 +4,10 @@ import { addMood } from '../actions/addMood'
 
 class MoodInput extends React.Component {
 
-  state = { name: '' }
+  state = {
+    name: '',
+    image_url: ''
+  }
 
   handleOnChange = (event) => {
     this.setState({
@@ -16,7 +19,8 @@ class MoodInput extends React.Component {
     event.preventDefault()
     this.props.addMood(this.state)
     this.setState({
-      name: ''
+      name: '',
+      image_url: ''
     })
   }
 
@@ -25,7 +29,23 @@ class MoodInput extends React.Component {
       <div>
         <form onSubmit={this.handleOnSubmit}>
           <label>Create a New Mood: </label>
-          <input type='text' placeholder='Name' value={this.state.name} name="name" onChange={this.handleOnChange}/><br></br>
+          <br></br>
+          <input
+            type='text'
+            placeholder='Name'
+            value={this.state.name}
+            name="name"
+            onChange={this.handleOnChange}
+          />
+          <br></br>
+          <input
+            type='text'
+            placeholder='image_url'
+            value={this.state.image_url}
+            name="image_url"
+            onChange={this.handleOnChange}
+          />
+          <br></br>
           <input type="submit"/>
         </form>
       </div>
