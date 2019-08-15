@@ -8,7 +8,7 @@ const Mood = (props) => {
  let mood = props.match ? props.moods[props.match.params.id - 1] : props.mood
 
  let divStyle = {
-   color: 'blue',
+   color: 'white',
    backgroundImage: `url(${mood && mood.image_url})`
  };
 
