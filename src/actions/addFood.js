@@ -10,7 +10,7 @@ export const addFood = (data, moodId) => {
         body: JSON.stringify(data)
       })
         .then(response => response.json())
-        .then(food => dispatch({ type: 'ADD_FOOD', payload: food, moodId }))
+        .then(food => dispatch({ type: 'ADD_FOOD', payload: food }))
     }
 
 }
