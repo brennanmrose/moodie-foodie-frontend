@@ -19,14 +19,11 @@ export default function moodReducer(state = { moods: [] }, action) {
 
       return {...state, moods: newMoods}
 
-    default:
-      return state
-
     case 'ADD_DRINK':
       let drinkMoodId = action.payload.id
 
       let newDrinkMoods = state.moods.map(mood => {
-      	if (drinkMoodId === mood.id) {
+        if (drinkMoodId === mood.id) {
           return action.payload
         } else {
           return mood
@@ -34,6 +31,23 @@ export default function moodReducer(state = { moods: [] }, action) {
       });
 
       return {...state, moods: newDrinkMoods}
+
+      case 'ADD_DESSERT':
+        let dessertMoodId = action.payload.id
+
+        let newDessertMoods = state.moods.map(mood => {
+          if (dessertMoodId === mood.id) {
+            return action.payload
+          } else {
+            return mood
+          }
+        });
+
+        return {...state, moods: newDessertMoods}
+
+    default:
+      return state
+
   }
 
 }
