@@ -5,7 +5,7 @@ import FoodInput from './FoodInput';
 const Foods = (props) => {
 
   let mood = props.moods[props.match.params.id - 1]
-console.log('Mood:', mood)
+
   return (
     mood ?
     <div>

@@ -12,7 +12,6 @@ import DessertInput from '../components/DessertInput';
 class VictualsContainer extends React.Component {
 
   render() {
-    console.log('Victuals: ', this.props.moods)
     return (
       <div>
         <Route path='/moods/:id/foods' render={ (routerProps) => <Foods {...routerProps} moods={this.props.moods} /> } />
