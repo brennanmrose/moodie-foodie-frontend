@@ -28,13 +28,13 @@ const Drinks = (props) => {
         ))}
       </ul>
       <DrinkInput moodProps={mood}/>
-        <br></br>
-        <label>Don't like one of your drinks? Get rid of it!:</label>
-        <ul>
-            {mood.drinks.map((drink, index) => (
-              <li><DeleteDrink drinkProps={drink} moodId={mood.id}/></li>
-            ))}
-        </ul>
+      <br></br>
+      <label>Don't like one of your drinks? Get rid of it!:</label>
+      <ul>
+          {mood.drinks.map((drink, index) => (
+            <li><DeleteDrink drinkProps={drink} moodId={mood.id}/></li>
+          ))}
+      </ul>
     </div>
     : null
   )
