@@ -7,6 +7,6 @@ export const deleteFood = (data, moodId) => {
       body: JSON.stringify(data)
     })
       .then(response => response.json())
-      .then(food => dispatch({ type: 'DELETE_FOOD', payload: food,data, moodId }))
+      .then(food => dispatch({ type: 'DELETE_FOOD', payload: food, data, moodId }))
   }
 }
