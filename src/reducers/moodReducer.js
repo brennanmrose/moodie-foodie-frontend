@@ -101,4 +101,3 @@ export default function moodReducer(state = { moods: [] }, action) {
   }
 
 }
- // look for id from action creator and filter it out for delete
