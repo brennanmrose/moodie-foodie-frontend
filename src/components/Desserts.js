@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Desserts.css';
 import DessertInput from './DessertInput';
+import DeleteDessert from './DeleteDessert';
 
 const Desserts = (props) => {
 
@@ -24,6 +25,13 @@ const Desserts = (props) => {
         ))}
       </ul>
       <DessertInput moodProps={mood}/>
+      <br></br>
+      <label>Don't like one of your desserts? Get rid of it!:</label>
+      <ul>
+          {mood.desserts.map((dessert, index) => (
+            <li><DeleteDessert dessertProps={dessert} moodId={mood.id}/></li>
+          ))}
+      </ul>
     </div>
     : null
   )
