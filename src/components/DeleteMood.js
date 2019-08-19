@@ -11,7 +11,7 @@ class DeleteMood extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.handleOnClick}>Delete {this.props.mood.name}</button>
+        <button onClick={this.handleOnClick}>Delete Mood</button>
       </div>
     );
   };

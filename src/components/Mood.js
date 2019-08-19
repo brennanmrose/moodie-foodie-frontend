@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Mood.css';
+import DeleteMood from './DeleteMood';
 import { Link } from 'react-router-dom';
 import { Jumbotron } from 'react-bootstrap';
 
@@ -38,6 +39,7 @@ const Mood = (props) => {
             <br></br>
             <br></br>
             <br></br>
+            <DeleteMood mood={mood}/>
           </Jumbotron>
         </div>
       </div>
