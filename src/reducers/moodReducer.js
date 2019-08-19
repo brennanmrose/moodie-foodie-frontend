@@ -45,8 +45,23 @@ export default function moodReducer(state = { moods: [] }, action) {
 
         return {...state, moods: newDessertMoods}
 
-    default:
-      return state
+      case 'DELETE_FOOD':
+
+        let findMood = state.moods.filter(mood => mood.id === action.moodId)[0]
+        findMood.foods = findMood.foods.filter(food => food.id !== action.data.id)
+
+        let deletedState = state.moods.map(mood => {
+          if (mood.id === findMood.id) {
+            return findMood
+          } else {
+            return mood
+          }
+        })
+
+        return {...state, moods: deletedState};
+
+      default:
+        return state
 
   }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Foods.css';
 import FoodInput from './FoodInput';
+import DeleteFood from './DeleteFood';
 
 const Foods = (props) => {
 
@@ -24,6 +25,13 @@ const Foods = (props) => {
         ))}
       </ul>
       <FoodInput moodProps={mood}/>
+      <br></br>
+      <label>Don't like one of your foods? Get rid of it!:</label>
+      <ul>
+          {mood.foods.map((food, index) => (
+            <li><DeleteFood foodProps={food} moodId={mood.id}/></li>
+          ))}
+      </ul>
     </div>
     : null
   )
