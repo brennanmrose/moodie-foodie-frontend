@@ -1,5 +1,5 @@
 export const deleteMood = (data) => {
-debugger
+
   return (dispatch) => {
     fetch(`http://localhost:3000/api/v1/moods/${data.id}`, {
       headers: { 'Content-Type': 'application/json' },

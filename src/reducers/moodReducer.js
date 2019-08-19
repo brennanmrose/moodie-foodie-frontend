@@ -6,6 +6,11 @@ export default function moodReducer(state = { moods: [] }, action) {
     case 'ADD_MOOD':
       return {...state, moods: [...state.moods, action.payload]}
 
+    case 'DELETE_MOOD':
+      return {...state,
+        moods: state.moods.filter(mood => mood.id !== action.data.id)
+      }
+
     case 'ADD_FOOD':
       let moodId = action.payload.id
 
