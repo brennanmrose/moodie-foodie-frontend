@@ -4,14 +4,18 @@ import DeleteMood from './DeleteMood';
 import { Link } from 'react-router-dom';
 import { Jumbotron } from 'react-bootstrap';
 
+// let mood = props.match ? props.moods[props.match.params.id - 1] : props.mood
+// debugger
 const Mood = (props) => {
 
- let mood = props.match ? props.moods[props.match.params.id - 1] : props.mood
+  let toFind = parseInt(props.match.params.id);
 
- let divStyle = {
+  let mood = props.moods.filter(mood => mood.id == props.match.params.id)[0]
+
+  let divStyle = {
    color: 'white',
    backgroundImage: `url(${mood && mood.image_url})`
- };
+  };
 
   return (
     mood ?
